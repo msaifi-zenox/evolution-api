@@ -5,9 +5,8 @@
   "main": "./dist/main.js",
   "type": "commonjs",
   "scripts": {
-    "scalingo-prebuild": "node runWithProvider.js \"npx prisma generate --schema ./prisma/DATABASE_PROVIDER-schema.prisma\"",
-    "build": "tsc --noEmit && tsup",
     "scalingo-postbuild": "node runWithProvider.js \"npx prisma generate --schema ./prisma/DATABASE_PROVIDER-schema.prisma\"",
+    "build": "tsc --noEmit && tsup",
     "start": "tsx ./src/main.ts",
     "start:prod": "node dist/main",
     "dev:server": "tsx watch ./src/main.ts",
