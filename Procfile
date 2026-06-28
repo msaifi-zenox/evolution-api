@@ -1,1 +1,1 @@
-web: npm run start:prod
+web: SERVER_PORT=$PORT node dist/main
